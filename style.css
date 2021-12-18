@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@200;400;700&family=Montserrat:wght@100;200;400;700&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #283655 !important;
+    background-color: #f7faff !important;
+    font-family: 'Rambla', sans-serif;
+}
+h1 {
+    padding: 90px 0 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5em;
+}
+h2, h3 {
+    font-family: 'Audiwide', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #283655;
+}
+li {
+    list-style-type: none;
+}
+
+/* ---------------------------- HEADER -------------------------------- */
+.navbar {
+    background-color: #fafafa;
+    opacity: 0.9;
+    height: 45px;
+    transition: 0.7s;
+}
+.navbar-nav {
+    width: 80% !important;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+header {
+    text-align: center;
+    height: 100vh;
+    background: url(./media/header.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+}
+#line {
+    height: 3px solid;
+    background-color: #b3aca7;
+    width: 25%;
+    margin: 0 auto;
+}
+.infos {
+    border: 1px solid #b3aca7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.photo {
+    border: 1px;
+    position: relative;
+}
+.photo img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    max-width: 70%;
+    border-color: #b3aca7;
+    border-style: solid;
+    border-radius: 200px;
+    box-shadow: 0 0 4px #111;
+}
+header .button {
+    margin-top: 45px;
+}
+header .button a {
+    padding: 20px 80px;
+    border: 1px solid #b3aca7;
+    width: 300px;
+}
+header .button:hover a {
+    background: #b3aca7;
+    color: #e2dedb;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* ---------------------------- Langages -------------------------------- */
+#langages {
+    padding: 80px 80px 80px 50px;
+    margin: 20px 0 0 6%;
+    height: 620px;
+    width: 50%;
+    max-width: 640px;
+}
+#langages .bar {
+    padding: 10px 0 4px 0;
+    letter-spacing: 0.1em;
+}
+
+/* ---------------------------- Formations -------------------------------- */
+
+#formations {
+    position: relative;
+    top: -200px;
+    float: right;
+    margin-right: 5%;
+    padding: 110px 0 60px 50px;
+    width: 50%;
+    max-width: 660px;
+}
+#ifr {
+    padding: 20px;
+}
+#ingenieur {
+    padding: 50px 0 0 10%;
+}
+#iut {
+    padding: 50px 0 0 20%;
+}
+#formation h4 {
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding-bottom: 10px;
+    color: #005978;
+    text-shadow: -1px -1px 1px #35b4d5;
+}
+.counter {
+    display: flex;
+    text-align: center;
+}
+.data {
+    border: 1px solid #35b4d5;
+    width: 170px;
+    margin: 0 4%;
+    box-shadow: 0 0 8px #1c9dc4;
+    padding: 5px 20px;
+}
+.counter-value {
+    font-size: 2em;
+}
+.data-span {
+    font-size: 1.8em ;
+}
+
+/* ---------------------------- Parcours -------------------------------- */
+#parcours {
+    max-width: 800px;
+    margin: 640px auto 180px auto;
+    padding: 40px 30px 100px 30px;
+    background: url(./media/parcours.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: -1px -1px 8px #283655;
+}
+#parcours h3 {
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+#parcours h4 {
+    font-size: 1.6em;
+    color: #edca21;
+    padding-bottom: 30px;
+}
+#parcours h5 {
+    font-size: italic;
+    color: #ff4e50;
+    padding-bottom: 30px;
+}
+#parcours p {
+    line-height: 1.9em;
+}
+.timeline {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #f9d423, #ff4e50);
+    border-image-slice: 1;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+}
+.timeline:nth-child(1):after {
+    content: '▲';
+    color: #ff4e50;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-sizing: content-box !important;
+}
+.timeline:nth-child(1) {
+    border-bottom: 3px solid;
+    border-top: none;
+    width: 80%;
+}
+.timeline:nth-child(2) {
+    border-top: none;
+}
+.timeline:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+}
+.timeline:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+}
+
+/* ---------------------------- Portfolio -------------------------------- */
+
